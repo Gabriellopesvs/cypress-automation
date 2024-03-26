@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaga para QA - Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #cadastroForm {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        img.logo {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vaga para QA - Tester</h1>
+    <img class="logo" src="imagem.png" alt="Logo Fake">
+
+    <form id="cadastroForm">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Número de Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+
+        <label for="genero">Gênero:</label>
+        <div id="genero">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="genero" value="Feminino" required>
+        </div><br><br>
+
+        <label for="linguagem">Linguagem que Sabe:</label>
+        <select id="linguagem" name="linguagem" required>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+        </select><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <button type="submit" id="cadastrarButton">Cadastrar</button>
+    </form>
+
+    <div id="cadastrarButton" style="display: none;">Cadastro finalizado!</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
