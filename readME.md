@@ -39,29 +39,29 @@ The `cypress.env.json` file is a configuration used by Cypress, containing cruci
 }
 ```
 
-# Usage
+## Usage
 
 In this example, the "run" variable determines the environment (e.g., "QA" or "DEV"), while the "QA" and "DEV" objects contain the specific URLs for each environment. This simplifies switching between environments, making the testing process more flexible and efficient.
 <br>
 
-#  📑 test-hooks.js
+##  📑 test-hooks.js
 
 The test-hooks.js file plays a crucial role in setting up and executing Cypress tests. It utilizes Cypress "hooks," which are functions that run automatically before or after the tests. Essentially, test-hooks.js sets up the test environment based on the cypress.env.json file and ensures a clean session, preventing conflicts in subsequent tests.
 
 <br>
 
-# 📑 e2e.js
+## 📑 e2e.js
 
 The e2e.js file takes advantage of custom functions cy.section() and cy.step() to enhance the presentation and organization of Cypress test results. This makes the test visualization cleaner and helps identify individual tests and their associated sections. This approach is especially useful for large or complex test suites.
 <br>
 
-💻 generate_date
+## 💻 generate_date
 
 The generate_date(date) function is a utility that formats a date in the "YYYY-MM-DD" format. It is used for date formatting in tests.
 
 <br>
 
-# 💻 action
+## 💻 action
 
 The action function is a custom command that performs actions on web page elements. It uses cy.get(element) to select the element on the page and then performs the specified action.
 
@@ -78,7 +78,7 @@ action("Clicking on the 'Submit' button", "button:contains('Submit')").click();
 
 <br>
 
-# 💻 data_faker
+## 💻 data_faker
 
 The data_faker constant is an object that contains various getter properties. Each getter generates fake data using the Faker.js library, such as generating a fake full name, fake email address, etc.
 
@@ -122,4 +122,4 @@ npx cypress open
 
 ```bash
 npx cypress run
-``
+```
